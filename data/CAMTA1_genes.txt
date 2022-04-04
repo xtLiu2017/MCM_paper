@@ -1,0 +1,108 @@
+tair name	gene symbol	gene description	GO terms (HSF)
+AT1G59910 	FORMIN7 	 	
+AT4G30850 	HHP2 	heptahelical transmembrane protein homologous to human adiponectin receptors and progestin receptors 	GO:0042221:response to chemical
+AT3G25600 	CML16 	 	GO:0051716:cellular response to stimulus
+AT4G34150 	 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT5G59550 	AtRDUF2 RDUF2 	 	GO:0042221:response to chemical|GO:0010200:response to chitin
+AT1G32928 	 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT3G44720 	ADT4 	Encodes a plastid-localized arogenate dehydratase involved in phenylalanine biosynthesis.  Not less than six genes encoding ADT were identi&#64257;ed in the Arabidopsis genome: ADT1 [At1g11790]; ADT2 [At3g07630]; ADT3 [At2g27820]; ADT4 [At3g44720]; ADT5 [At5g22630]; and ADT6 [At1g08250]. 	
+AT3G55950 	ATCRR3 CCR3 	 	
+AT4G34390 	XLG2 	 	GO:0051716:cellular response to stimulus|GO:0042221:response to chemical
+AT2G23810 	TET8 	Member of TETRASPANIN family 	
+AT3G21140 	 	 	
+AT1G15010 	 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT4G30430 	TET9 	Member of TETRASPANIN family 	
+AT3G52400 	ATSYP122 SYP122 	syntaxin protein, involved in the negative regulation of defense pathways such as programmed cell death, salicylic acid signalling pathway, jasmonic acid signalling pathway 	GO:0033554:cellular response to stress|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT5G04870 	ATCPK1 CPK1 	A calcium-dependent protein kinase that can phosphorylate phenylalanine ammonia lyase (PAL), a key enzyme in pathogen defense. 	GO:0051716:cellular response to stimulus
+AT4G30060 	 	 	
+AT2G41010 	ATCAMBP25 CAMBP25 	Encodes a novel calmodulin binding protein whose gene expression is induced by dehydration and ionic (salt) and non-ionic (mannitol) osmotic stress. Lines over-expressing this gene are more sensitive and anti-sense lines are more tolerant to osmotic stress, suggesting this gene may be a negative regulator of response to osmotic stress. 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT5G18400 	AtDRE2 DRE2 	 	
+AT5G16200 	 	 	
+AT1G73080 	ATPEPR1 PEPR1 	Encodes a leucine-rich repeat receptor kinase.  Functions as a receptor for AtPep1 to amplify innate immunity response to pathogen attacks. 	GO:0042221:response to chemical
+AT1G07130 	ATSTN1 STN1 	Encodes a protein with similarity to yeast STN1, an OB fold protein involved in protecting yeast telomeres. In Arabidopsis, loss of STN1 function mutations exhibit gross morphological abnormalities and defects in telomere architecture and maintenance. STN1 likely plays a role in telomere end capping. 	
+AT3G52800 	 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus|GO:0010200:response to chitin
+AT4G18880 	AT-HSFA4A HSF 	member of Heat Stress Transcription Factor (Hsf) family 	GO:0033554:cellular response to stress|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0010200:response to chitin
+AT1G68410 	 	 	
+AT5G45630 	 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT1G59860 	 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT3G52870 	 	 	
+AT5G57123 	 	 	
+AT3G26980 	MUB4 	 	
+AT5G58120 	 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT5G46780 	 	 	
+AT4G04540 	CRK39 	Encodes a cysteine-rich receptor-like protein kinase. 	
+AT5G13100 	 	 	
+AT1G51660 	ATMEK4 ATMKK4 MKK4 	Encodes a mitogen-activated map kinase kinase (there are nine in Arabidopsis) involved in innate immunity. This protein activates MPK3/MPK6 and early-defense genes redundantly with MKK5. In plants with both MKK5 and MKK6 levels reduced by RNAi plants, floral organs do not abscise suggestion a role for both proteins in mediating floral organ abscission. 	GO:0033554:cellular response to stress|GO:0051716:cellular response to stimulus
+AT5G17350 	 	 	
+AT4G23550 	ATWRKY29 WRKY29 	Encodes WRKY DNA-binding protein 29 (WRKY29). 	GO:0042221:response to chemical|GO:0010200:response to chitin
+AT5G52640 	ATHS83 AtHsp90-1 ATHSP90.1 HSP81-1 HSP81.1 HSP83 HSP90.1 	Encodes a cytosolic heat shock protein AtHSP90.1.  AtHSP90.1 interacts with disease resistance signaling components SGT1b and RAR1 and is required for RPS2-mediated resistance. 	GO:0033554:cellular response to stress|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical
+AT4G29440 	ISTL4 	 	
+AT3G01820 	 	 	
+AT2G45760 	BAL BAP2 	encodes a protein that is similar to BONZAI1-binding protein BAP1. 	
+AT2G32150 	 	 	
+AT3G02880 	KIN7 	 	GO:0042221:response to chemical
+AT1G49900 	 	 	GO:0042221:response to chemical|GO:0010200:response to chitin
+AT3G16510 	 	 	
+AT5G61510 	 	 	GO:0033554:cellular response to stress|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT3G22400 	ATLOX5 LOX5 	 	
+AT1G67800 	RGLG5 	 	GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT5G03210 	AtDIP2 DIP2 	 	
+AT1G09070 	(AT)SRC2 AtSRC2 SRC2 	SRC2 specifically binds the peptide PIEPPPHH, and moves from ER to a vacuole fraction where it gets internalized. Involved in Protein Storage Vacuole targeting. 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT3G28210 	PMZ SAP12 	Encodes a putative zinc finger protein (PMZ). 	GO:0042221:response to chemical|GO:0010200:response to chitin
+AT1G27720 	TAF4 TAF4B 	 	
+AT2G37970 	AtHBP2 HBP2 SOUL-1 	 	GO:0051716:cellular response to stimulus
+AT4G30390 	 	 	
+AT3G62260 	 	 	
+AT3G44350 	anac061 NAC061 	 	GO:0042221:response to chemical|GO:0010200:response to chitin
+AT3G49530 	ANAC062 NAC062 NTL6 	Transcription factor that serves as a molecular link between cold signals and pathogen resistance  responses.  Undergoes proteolytic processing triggered by cold-induced changes in membrane fluidity. 	GO:0033554:cellular response to stress|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus|GO:0010200:response to chitin
+AT1G64065 	 	 	
+AT4G20380 	LSD1 	LSD1 monitors a superoxide-dependent signal and negatively regulates a plant cell death pathway. contains zinc-finger motifs. LSD1 negatively regulates a basal defense pathway that can act upstream or independently of both NIM1/NPR1 function and SA accumulation following avirulent or virulent pathogen challenge 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT4G30350 	SMXL2 	 	GO:0042221:response to chemical
+AT5G59820 	AtZAT12 RHL41 ZAT12 	Encodes a zinc finger protein involved in high light and cold acclimation. Overexpression of this putative transcription factor increases the expression level of 9 cold-responsive genes and represses the expression level of 15 cold-responsive genes, including CBF genes. Also, lines overexpressing this gene exhibits a small but reproducible increase in freeze tolerance. Because of the repression of the CBF genes by the overexpression of this gene, the authors speculate that this gene may be involved in negative regulatory circuit of the CBF pathway. 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus|GO:0010200:response to chitin
+AT4G18950 	BHP 	 	
+AT5G24590 	ANAC091 ANAC91 TIP 	Member of NAc protein family. Interacts with  turnip crinkle virus (TCV) capsid protein. Transcription factor  involved in regulating the defense response of Arabidopsis to TCV. 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT5G62620 	GALT6 	 	
+AT3G07580 	 	 	
+AT1G08860 	BON3 	Encodes a copine-like protein, which is a member of a newly identified class of calcium-dependent, phospholipid binding proteins that are present in a wide range of organisms. Overexpression of this gene suppresses bon1-1 phenotypes. Double mutant analyses with bon1-1 suggest that BON1 and BON3 have overlapping functions in maintaining cellular homeostasis and inhibiting cell death. 	GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT1G12420 	ACR8 	 	GO:0042221:response to chemical
+AT5G13190 	AtGILP GILP 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT5G19240 	 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT1G13360 	 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT1G68690 	AtPERK9 PERK9 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT3G62720 	ATXT1 AtXXT1 XT1 XXT1 	Encodes a protein with xylosyltransferase activity, which is specific for UDP-xylose as donor substrate and for oligosaccharides with a degree of polymerization >4. Although the enzyme utilizes either cellopentaose or cellohexaose, its activity is four-fold higher with cellohexaose as an acceptor compared to cellopentaose. The enzyme is able to add several xylosyl residues to the acceptor forming mono-, di- and trixylosylated polysaccharides. 	
+AT1G10340 	 	 	
+AT3G28340 	GATL10 GolS8 	Encodes a protein with  putative galacturonosyltransferase activity. 	
+AT3G16330 	 	 	
+AT5G46410 	SSP4 	Encodes a SCP1-like small phosphatase (SSP).  Three SSPs form a unique group with long N-terminal extensions: AT5G46410 (SSP4), AT5G11860 (SSP5), AT4G18140 (SSP4b). SSP4 and SSP4b were localized exclusively in the nuclei, whereas SSP5 accumulated in both nuclei and cytoplasm. All three SSPs encodes active CTD phosphatases like animal SCP1 family proteins, with distinct substrate specificities: SSP4 and SSP4b could dephosphorylate both Ser2-PO(4) and Ser5-PO(4) of CTD, whereas SSP5 dephosphorylated only Ser5-PO(4). 	
+AT1G67000 	 	 	
+AT2G03410 	 	 	GO:0051716:cellular response to stimulus
+AT3G46080 	 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus|GO:0010200:response to chitin
+AT2G45910 	 	 	
+AT5G03890 	 	 	
+AT2G41420 	WIH2 	 	
+AT5G08240 	 	 	
+AT5G09470 	DIC3 	Encodes one of the mitochondrial dicarboxylate carriers (DIC): DIC1 (AT2G22500), DIC2 (AT4G24570), DIC3 (AT5G09470). 	GO:0042221:response to chemical
+AT1G76040 	CPK29 	member of Calcium Dependent Protein Kinase 	GO:0051716:cellular response to stimulus
+AT4G23210 	CRK13 	Encodes a Cysteine-rich receptor-like kinase (CRK13).  Overexpression of CRK13 leads to hypersensitive response cell death, and induces defense against pathogens by causing increased accumulation of salicylic acid. 	GO:0033554:cellular response to stress|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical
+AT1G65240 	A39 	 	
+AT5G24810 	 	 	
+AT1G76700 	 	 	
+AT1G76970 	 	 	
+AT3G50910 	 	 	
+AT5G54700 	 	 	
+AT5G67080 	MAPKKK19 MKK19 	member of MEKK subfamily 	GO:0033554:cellular response to stress|GO:0051716:cellular response to stimulus
+AT1G22410 	 	 	
+AT3G21230 	4CL5 	The gene encodes a 4-coumarate coenzyme A ligase being able to use sinapate as substrate. The catalytic efficiency was in the following (descending) order:  p-coumaric acid, caffeic acid, 5-OH-ferulic acid, ferulic acid and sinapic acid. At4CL5 was unable to use cinnamic acid as substrate. Knockout of At4CL5 (4cl5) revealed no effect on syringyl lignin content indicating that the activity observed does probably not occur in vivo. 	
+AT3G25870 	 	 	
+AT5G11650 	MAGL13 	 	
+AT4G20860 	AtBBE22 BBE22 CELLOX 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT1G71390 	AtRLP11 RLP11 	 	GO:0051716:cellular response to stimulus
+AT1G77500 	 	 	
+AT4G17670 	 	 	GO:0042221:response to chemical
+AT4G39890 	AtRABH1c RABH1c 	 	GO:0051716:cellular response to stimulus
+AT5G17330 	AtGAD1 GAD GAD1 	Encodes one of two isoforms of glutamate decarboxylase. 	GO:0042221:response to chemical
+AT1G29150 	ATS9 RPN6 	specifically interacts with FUS6/COP11 via the C-terminal domain of FUS6/COP11 and associates with an ATPase subunit of the 19S proteasome regulatory complex, AtS6A. 	GO:0042221:response to chemical
+AT1G42990 	ATBZIP60 BZIP60 	AtbZIP60 consists of a bZIP DNA binding domain followed by a putative transmembrane domain. GFP fusions containing the first 260 amino acids (AtbZIP60deltaC) are nuclear-localized. AtbZIP60 is upregulated by the addition of tunicamycin (ER stress response inductor), DTT (inhibitor of disulfide bond formation) and azetin-2-carboxylate (proline analog perturbing protein structure). Upon ER stress the protein is proteolyzed and the soluble part is translocalized into the nucleus. AtbZIP60deltaC can activate the promoters of the ER chaperones BiP1, BiP2 and BiP3 and CNX1 and CNX2 via binding to the ER stress response element (ERSE) and the plant unfolded protein response element(P-UPRE). It can also activate its own transcription. 	GO:0033554:cellular response to stress|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus|GO:0010200:response to chitin
+AT2G32210 	AthCYSTM6 	 	GO:0033554:cellular response to stress|GO:0001666:response to hypoxia|GO:0036293:response to decreased oxygen levels|GO:0070482:response to oxygen levels|GO:0036294:cellular response to decreased oxygen levels|GO:0071453:cellular response to oxygen levels|GO:0071456:cellular response to hypoxia|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical|GO:0070887:cellular response to chemical stimulus
+AT3G12320 	LNK3 	 	
+AT4G17720 	 	 	GO:0033554:cellular response to stress|GO:0051716:cellular response to stimulus|GO:0042221:response to chemical
