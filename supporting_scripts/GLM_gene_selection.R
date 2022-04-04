@@ -1,3 +1,9 @@
+# Author: Xiaotong Liu (liux4215@umn.edu)
+# This first part of the scripts is to fit a GLM model for each gene to obtain the mean estimates from read count data
+# This first part is probably the only part in the folder '/MCM_paper' that cannot run smoothly. Because
+# I deleted the raw read count data (GSE88798) in order to avoid using others' data directly. 
+# If you need to run this script, please go to NCBI to find the data first and run this script. 
+
 setwd("~/Documents/MCM_paper/data")
 Mydata1 = read.table('GSE88798_ReadCountTable_M001_348.txt',header = TRUE, row.names = 1)
 Mydata2 = read.table('GSE88798_ReadCountTable_M349_366.txt',header = TRUE, row.names = 1)
@@ -17,7 +23,7 @@ for (mylib in c(libraries1,libraries2)){
 Mydata <- cbind(Mydata1[gene_names,], Mydata2[gene_names,])
 Mydata <- Mydata + 1
 raw_genes_in_Ken_transcriptome = rownames(Mydata)
-save(raw_genes_in_Ken_transcriptome,file = "/Users/liux/Documents/MCM_paper/data/raw_genes_in_Ken_transriptome.Rdata")
+save(raw_genes_in_Ken_transcriptome,file = "~/Documents/MCM_paper/data/raw_genes_in_Ken_transriptome.Rdata")
 #no 0
 cval.90.Ken = apply(Mydata, 2, function(x) {
   quantile(x, probs = 0.9)
@@ -57,23 +63,33 @@ for (mygene in kept.genes) {
     glm_fixef[[mygene]] = cbind(Estimate=0, Std.Error=1) /log(2) 
   }
 }
-save(glm_fixef,AIC_list,file = "/Users/liux/Documents/MCM_paper/data/glm_fixef_Ken_WT_with_pseudocounts.Rdata")
+save(glm_fixef,AIC_list,file = "~/Documents/MCM_paper/data/glm_fixef_Ken_WT_with_pseudocounts.Rdata")
 
-#genes AvrRpt2 > mock at at least 1 time point
-library(qvalue)
+# This second part is to select genes that are significantly induced at at least one time point
+# after AvrRpt2 treatment
+
+library(qvalue)    # Storey FDR
+
+# the directory where I can obtain the data
 setwd("~/Documents/MCM_paper/data")
+# GLM fitting of all genes
 load("glm_fixef_Ken_WT_with_pseudocounts.Rdata")
+# mock treatment labels
 Mock_label = c("mytreatmock:mytime01h","mytreatmock:mytime02h","mytreatmock:mytime03h",
                "mytreatmock:mytime04h","mytreatmock:mytime06h","mytreatmock:mytime09h",
                "mytreatmock:mytime12h","mytreatmock:mytime16h","mytreatmock:mytime20h",
                "mytreatmock:mytime24h")
+# AvrRpt2 treatment labels (Pto AvrRpt2)
 AvrRpt2_label = c("mytreatAvrRpt2:mytime01h","mytreatAvrRpt2:mytime02h","mytreatAvrRpt2:mytime03h",
                   "mytreatAvrRpt2:mytime04h","mytreatAvrRpt2:mytime06h","mytreatAvrRpt2:mytime09h",
                   "mytreatAvrRpt2:mytime12h","mytreatAvrRpt2:mytime16h","mytreatAvrRpt2:mytime20h",
                   "mytreatAvrRpt2:mytime24h")
+# Empty vector labels (Pto)
 EV_label = c("mytreatEV:mytime01h","mytreatEV:mytime02h","mytreatEV:mytime03h","mytreatEV:mytime04h",
              "mytreatEV:mytime06h","mytreatEV:mytime09h","mytreatEV:mytime12h","mytreatEV:mytime16h",
              "mytreatEV:mytime20h","mytreatEV:mytime24h")
+# compare the glm fit difference between AvrRpt2 and mock, between EV and mock
+# Note that the difference is on log2 scale
 AvrRpt2andEV_mock_diff <- lapply(glm_fixef,function(x){
   AvrRpt2_means <- x[AvrRpt2_label,1];AvrRpt2_stds <- x[AvrRpt2_label,2]
   EV_means <- x[EV_label,1];EV_stds <- x[EV_label,2]
@@ -90,32 +106,45 @@ AvrRpt2andEV_mock_diff <- lapply(glm_fixef,function(x){
   p_values <- c(AvrRpt2_diff_p,EV_diff_p)
   return(cbind(diff,std,p_values))
 })
+# get all p values
 p_AvrRpt2andEV_mock_diff = unlist(lapply(AvrRpt2andEV_mock_diff, '[', ,3))
+# get all q values
 q_AvrRpt2andEV_mock_diff = qvalue(p_AvrRpt2andEV_mock_diff)$qvalues
+# pvalue cutoff for FDR = 0.05
 p_cutoff = sort(p_AvrRpt2andEV_mock_diff)[sum(q_AvrRpt2andEV_mock_diff < 0.05)]
+# criteria: log2FC > 1 and q < 0.05 at at least one time point
 respond_mock <- lapply(AvrRpt2andEV_mock_diff,function(x){sum(x[,3] < p_cutoff & abs(x[,1]) > 1 )})
 respond_mock_genes <- names(which(unlist(respond_mock) != 0))
 not_respond_genes = setdiff(names(glm_fixef),respond_mock_genes)
 flat_genes_profile = lapply(AvrRpt2andEV_mock_diff,function(x){sum(x[,3] > p_cutoff)})
+# flat genes, no response at almost no time point for EV and AvrRpt2
 flat_genes = names(which(unlist(flat_genes_profile) > 19))
 save(flat_genes,file = "flat_genes.Rdata")
+
 
 AvrRpt2_mock_positive <- lapply(AvrRpt2andEV_mock_diff,function(x){sum(x[1:10,3] < p_cutoff & x[1:10,1] > 1 )})
 AvrRpt2_mock_negative <- lapply(AvrRpt2andEV_mock_diff,function(x){sum(x[1:10,3] < p_cutoff & x[1:10,1] < -1 )})
 
 AvrRpt2_mock_positive_genes1 <- names(which(unlist(AvrRpt2_mock_positive) != 0))
 AvrRpt2_mock_negative_genes1 <- names(which(unlist(AvrRpt2_mock_negative) != 0))
+# positive responded (induced) in AvrRpt2, no time point of suppression
 AvrRpt2_mock_positive_genes <- setdiff(AvrRpt2_mock_positive_genes1,AvrRpt2_mock_negative_genes1)
+# negative responded (suppressed) in AvrRpt2, no time point of induction 
 AvrRpt2_mock_negative_genes <- setdiff(AvrRpt2_mock_negative_genes1,AvrRpt2_mock_positive_genes1)
 
+# induced at the first three time points
 AvrRpt2EV_mock_positive_first_three_hours <- lapply(AvrRpt2andEV_mock_diff,function(x){sum(x[c(1,2,3,11,12,13),3] < p_cutoff & x[c(1,2,3,11,12,13),1] > 1 )})
 AvrRpt2EV_mock_positive_first_three_hours_genes <- names(which(unlist(AvrRpt2EV_mock_positive_first_three_hours) != 0))
+# suppressed at the first three time points
 AvrRpt2EV_mock_negative_first_three_hours <- lapply(AvrRpt2andEV_mock_diff,function(x){sum(x[c(1,2,3,11,12,13),3] < p_cutoff & x[c(1,2,3,11,12,13),1] < -1 )})
 AvrRpt2EV_mock_negative_first_three_hours_genes <- names(which(unlist(AvrRpt2EV_mock_negative_first_three_hours) != 0))
 
+# get those genes, induced or suppressed at the first three time points
 AvrRpt2_mock_positive_genes_respond_before_3h <- intersect(AvrRpt2_mock_positive_genes,AvrRpt2EV_mock_positive_first_three_hours_genes)
 AvrRpt2_mock_negative_genes_respond_before_3h <- intersect(AvrRpt2_mock_negative_genes,AvrRpt2EV_mock_negative_first_three_hours_genes)
 
+# induced or suppressed at later time points,
+# These are what we wanted
 AvrRpt2_mock_positive_genes <- setdiff(AvrRpt2_mock_positive_genes,AvrRpt2EV_mock_positive_first_three_hours_genes)
 AvrRpt2_mock_negative_genes <- setdiff(AvrRpt2_mock_negative_genes,AvrRpt2EV_mock_negative_first_three_hours_genes)
 
