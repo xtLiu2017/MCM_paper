@@ -1,4 +1,4 @@
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load("EV_genes.Rdata")
 load("select.highquality.genes.Rdata")
 load("peak_info_MCM_spline.Rdata")

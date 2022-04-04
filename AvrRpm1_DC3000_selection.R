@@ -1,5 +1,5 @@
 library(qvalue)
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load("glm_fixef_Ken_WT_with_pseudocounts.Rdata")
 Mock_label = c("mytreatmock:mytime01h","mytreatmock:mytime02h","mytreatmock:mytime03h",
                "mytreatmock:mytime04h","mytreatmock:mytime06h","mytreatmock:mytime09h",

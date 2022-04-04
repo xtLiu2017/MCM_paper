@@ -11,7 +11,7 @@ library(grid)
 library(gridExtra)
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 # load the data, 3039 genes MCM profiles
 load("profile_mat.Rdata")

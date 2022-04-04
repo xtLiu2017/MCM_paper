@@ -1,4 +1,4 @@
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 Mydata1 = read.table('GSE88798_ReadCountTable_M001_348.txt',header = TRUE, row.names = 1)
 Mydata2 = read.table('GSE88798_ReadCountTable_M349_366.txt',header = TRUE, row.names = 1)
 gene_names1 <- rownames(Mydata1)
@@ -61,7 +61,7 @@ save(glm_fixef,AIC_list,file = "/Users/liux/Documents/MCM_paper/data/glm_fixef_K
 
 #genes AvrRpt2 > mock at at least 1 time point
 library(qvalue)
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load("glm_fixef_Ken_WT_with_pseudocounts.Rdata")
 Mock_label = c("mytreatmock:mytime01h","mytreatmock:mytime02h","mytreatmock:mytime03h",
                "mytreatmock:mytime04h","mytreatmock:mytime06h","mytreatmock:mytime09h",

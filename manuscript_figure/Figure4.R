@@ -2,7 +2,7 @@
 # This script is to generate figure 4 for the manuscript
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 # packages
 library(ggplot2)      # plotting
@@ -201,7 +201,7 @@ lay <- rbind(c(1,1,2,2,3,3,3),
              c(4,4,5,5,6,6,6))
              
 #change your directory as needed
-jpeg('/Users/liux/Documents/MCM_paper/manuscript_figure/Figure4.jpeg', width = 320, height = 190, unit = 'mm', res = 400)
+jpeg('~/Documents/MCM_paper/manuscript_figure/Figure4.jpeg', width = 320, height = 190, unit = 'mm', res = 400)
 grid.arrange(p1,p2,fig3b,p3,p4,ggplot_sp,layout_matrix = lay)
 grid.text('A', x = unit(5,'mm'),y = unit(185,'mm'),gp = gpar(fontface = 'bold'))
 grid.text('B', x = unit(97,'mm'),y = unit(185,'mm'),gp = gpar(fontface = 'bold'))

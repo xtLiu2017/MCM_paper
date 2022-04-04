@@ -1,4 +1,4 @@
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 #data preprocessing
 Daisuke_info = read.csv(file = "preliminary.gamma.distr.fit.a.pt.csv",header = T)
 genes_Dais = Daisuke_info[,1]

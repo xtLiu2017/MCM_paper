@@ -3,7 +3,7 @@
 # It shows an empirical way of decomposing two peak profiles based on spline method
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 #packages
 library(ComplexHeatmap)   #heatmap
@@ -60,7 +60,7 @@ ht1 = Heatmap(select.profile_mat, col = col, cluster_rows = mhclust, name = "log
               heatmap_width = unit(190,"mm"), column_names_rot = 45,
               column_split = rep(c("MCM (set1)","MCM (set2)","Spline"),each=14),
               show_heatmap_legend = F)
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/sup.fig1e.jpeg",height = 160, width = 220, units = "mm",res = 400)
+jpeg("~/Documents/MCM_paper/manuscript_figure/sup.fig1e.jpeg",height = 160, width = 220, units = "mm",res = 400)
 draw(ht1, annotation_legend_list = lgd)
 dev.off()
 

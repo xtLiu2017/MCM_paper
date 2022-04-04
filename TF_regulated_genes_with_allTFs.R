@@ -1,4 +1,4 @@
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load("Annotation_mat.Rdata")
 load("select.highquality.genes.Rdata")
 WRKY_TFs = c("WRKY14_col_a", "WRKY15_col_b", "WRKY18_col_a", "WRKY20_col_a", "WRKY21_col",

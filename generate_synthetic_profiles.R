@@ -2,7 +2,7 @@
 library(ComplexHeatmap)
 library(circlize)
 library(RColorBrewer)
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load("profile_mat.Rdata")
 load("AvrRpt2_genes.Rdata")
 rownames(profiles_mat) = AvrRpt2_mock_positive_genes
@@ -53,7 +53,7 @@ dev.off()
 fig3a_plot = grid.grabExpr(draw(ht1,annotation_legend_list = lgd)) 
 
 
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 #data preprocessing
 Daisuke_info = read.csv(file = "preliminary.gamma.distr.fit.a.pt.csv",header = T)
 genes_Dais = Daisuke_info[,1]

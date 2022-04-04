@@ -2,7 +2,7 @@
 library(ComplexHeatmap)
 library(circlize)
 library(RColorBrewer)
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load("profile_mat.Rdata")
 load("AvrRpt2_genes.Rdata")
 rownames(profiles_mat) = AvrRpt2_mock_positive_genes

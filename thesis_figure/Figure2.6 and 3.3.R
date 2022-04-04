@@ -11,7 +11,7 @@ library(grid)             # supporting package, for merging multiple heatmaps in
 library(gridExtra)        # same above
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data/")
+setwd("~/Documents/MCM_paper/data/")
 
 # load the data, 3039 genes MCM profiles
 load("profile_mat.Rdata")
@@ -169,10 +169,10 @@ synthetic_hm = grid.grabExpr(draw(ht.synthetic.not.fixed %v% ht.synthetic.fixed,
 # layout matrix indicating how to organize the heatmaps in a page
 lay = rbind(c(1,1,1,1,1,2,2,2,2,3,3,3,3),c(1,1,1,1,1,2,2,2,2,3,3,3,3))
 # for below, change the output directory as you need
-jpeg('/Users/liux/Desktop/paper_figures/thesis/Figure2.6.jpeg',width = 340, height = 157, unit = 'mm',res = 500)
+jpeg('~/Desktop/paper_figures/thesis/Figure2.6.jpeg',width = 340, height = 157, unit = 'mm',res = 500)
 grid.arrange(mean_estimate_hm,model_hm,residual_hm,layout_matrix = lay)
 dev.off()
-jpeg('/Users/liux/Desktop/paper_figures/thesis/Figure3.3.jpeg',width = 160, height = 180, unit = 'mm',res = 500)
+jpeg('~/Desktop/paper_figures/thesis/Figure3.3.jpeg',width = 160, height = 180, unit = 'mm',res = 500)
 draw(ht.synthetic.not.fixed %v% ht.synthetic.fixed, 
      annotation_legend_list = lgd)
 dev.off()

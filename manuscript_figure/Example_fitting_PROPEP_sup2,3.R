@@ -3,7 +3,7 @@
 # Previously, we put it in the main figures but now we make them in supplemental figure 2
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data/")
+setwd("~/Documents/MCM_paper/data/")
 
 # example genes, I only used the first three genes in the supplemental to show goodness-of-fit
 # The other two genes are PROPER genes, used in anohter supplemental figure
@@ -115,7 +115,7 @@ for (mygene in c(example1, example2,example3,example4, example5)){
 # This part is independent from the part above, so you can start running the code here
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 # read count data
 load("col_count_data.Rdata")
@@ -141,7 +141,7 @@ names(gene_labels) = gene_list
 glm_labels = c(rep(c('x_time1','x_time3','x_time4','x_time6','x_time9','x_time12','x_time16','x_time24'), time = 3),
 rep(c('x_time2','x_time20'), each = 3))
 library(MASS)
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/sup.fig3.jpeg",width = 5.3, height = 4.6, units = "cm", res = 600)
+jpeg("~/Documents/MCM_paper/manuscript_figure/sup.fig3.jpeg",width = 5.3, height = 4.6, units = "cm", res = 600)
 par(mfrow = c(3,2),mar = c(1.8,1.7,0.4,0.4))
 i = 1
 j = 1
@@ -201,7 +201,7 @@ dev.off()
 # The codes below are used for my defense slides
 # Just ignore this for the manuscript
 # plot glm fitting of the genes
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load("col_count_data.Rdata")
 load("glm_fixef_Ken_WT_with_pseudocounts.Rdata")
 all.genes <- rownames(col_count_data)

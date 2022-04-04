@@ -3,7 +3,7 @@
 # The figure shows the transcript response of three families, HSF, WRKY, ANAC
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 # glm fitting, AvrRpt2 ETIs
 load("glm_fixef_Ken_WT_with_pseudocounts.Rdata")
 
@@ -71,7 +71,7 @@ plot_sup8 = ggplot(df_TFs, aes(x = time, y = mean_diff, color = TF_label)) + geo
   theme(legend.text = element_text(size=10),legend.title = element_blank(),
         strip.background = element_blank(),strip.text.x = element_text(size = 14),
         axis.title = element_text(size = 12), axis.text = element_text(size = 10))
-jpeg('/Users/liux/Documents/MCM_paper/manuscript_figure/sup.fig8.jpeg', width = 200, height = 100, unit = 'mm', res = 400)
+jpeg('~/Documents/MCM_paper/manuscript_figure/sup.fig8.jpeg', width = 200, height = 100, unit = 'mm', res = 400)
 grid.arrange(plot_sup8)
 dev.off()
   

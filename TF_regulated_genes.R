@@ -1,4 +1,4 @@
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load('TF_regulated_genes.Rdata')
 load("peak_info_all.Rdata")
 load("select.highquality.genes.Rdata")

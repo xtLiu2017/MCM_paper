@@ -1,5 +1,5 @@
 #plot glm fitting of the genes
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load("col_count_data.Rdata")
 load("glm_fixef_Ken_WT_with_pseudocounts.Rdata")
 all.genes <- rownames(col_count_data)

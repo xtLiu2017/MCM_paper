@@ -6,7 +6,7 @@ library(ComplexHeatmap) # heatmap package
 library(circlize)  # color package
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 #glm of AvrRpt2 ETI data (Kenichi's data)
 load("glm_fixef_Ken_WT_with_pseudocounts.Rdata")
@@ -37,7 +37,7 @@ max_value = quantile(as.vector(dm),probs = 0.999)
 #color scale
 col = colorRamp2(c(min_value, 0, 0.5 *max_value, max_value), c("dodgerblue","white","coral1","darkred"))
 
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/sup.fig1a.jpeg", width = 220, height = 180, units = "mm", res = 350)
+jpeg("~/Documents/MCM_paper/manuscript_figure/sup.fig1a.jpeg", width = 220, height = 180, units = "mm", res = 350)
 lgd = Legend(col_fun = col, title = expression(log[2]~FC),legend_height = unit(40,"mm"),legend_width = unit(18,"mm"),
              title_gp = gpar(fontsize = 20), labels_gp = gpar(fontsize = 17),title_gap = unit(4,"mm"))
 # takes ~ 5 min
@@ -59,9 +59,9 @@ sup1a_plot = grid.grabExpr(draw(ht1, ht_gap = unit(c(1), "cm"), annotation_legen
 
 
 #sup 1b, signal-to-noise histogram, starting from 3039 AvrRpt2-induced genes
-setwd("/Users/liux/Documents/MCM_paper/data")
-load("/Users/liux/Documents/MCM_paper/data/glm_fixef_Ken_WT_with_pseudocounts.Rdata")
-load("/Users/liux/Documents/MCM_paper/data/AvrRpt2_genes.Rdata")
+setwd("~/Documents/MCM_paper/data")
+load("~/Documents/MCM_paper/data/glm_fixef_Ken_WT_with_pseudocounts.Rdata")
+load("~/Documents/MCM_paper/data/AvrRpt2_genes.Rdata")
 Rpt2_labels = c("mytreatAvrRpt2:mytime03h","mytreatAvrRpt2:mytime04h","mytreatAvrRpt2:mytime06h",
                 "mytreatAvrRpt2:mytime09h","mytreatAvrRpt2:mytime12h","mytreatAvrRpt2:mytime16h",
                 "mytreatAvrRpt2:mytime20h","mytreatAvrRpt2:mytime24h")
@@ -74,7 +74,7 @@ for (mygene in AvrRpt2_mock_positive_genes){
 }
 names(signal_to_noise.all) = AvrRpt2_mock_positive_genes
 
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/sup.fig1.b.jpeg",width = 150, height = 140,unit = "mm",res = 400)
+jpeg("~/Documents/MCM_paper/manuscript_figure/sup.fig1.b.jpeg",width = 150, height = 140,unit = "mm",res = 400)
 par(mar = c(5,5,2,2))
 hist(signal_to_noise.all,xlab = "signal-to-noise ratio",main = "",ylab = "Number of genes",breaks = 50,
      col = 'gray80',border = "gray20",cex.lab = 1.8, cex.axis = 1.5)
@@ -85,7 +85,7 @@ save(signal_to_noise.all,file = "signal_to_noise.all.Rdata")
 
 
 #select genes with high signal-noise ratio for further analysis
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load("AvrRpt2_genes.Rdata")
 load("signal_to_noise.all.Rdata")
 select.genes = names(which(signal_to_noise.all > 6.5))
@@ -114,7 +114,7 @@ hc= hclust(my_dist, method = "average")
 min_value = quantile(as.vector(dm),probs = 0.001)
 max_value = quantile(as.vector(dm),probs = 0.999)
 col = colorRamp2(c(min_value, 0, 0.5 *max_value, max_value), c("dodgerblue","white","coral1","darkred"))
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/sup.fig1.c.jpeg", width = 220, height = 180, units = "mm", res = 350)
+jpeg("~/Documents/MCM_paper/manuscript_figure/sup.fig1.c.jpeg", width = 220, height = 180, units = "mm", res = 350)
 lgd = Legend(col_fun = col, title = expression(log[2]~FC),legend_height = unit(40,"mm"),legend_width = unit(8,"mm"),
              title_gp = gpar(fontsize = 18), labels_gp = gpar(fontsize = 15),title_gap = unit(4,"mm"))
 ht1 = Heatmap(dm, col = col, cluster_rows = hc,name = "log2 scale",
@@ -134,7 +134,7 @@ sup_fig1c = grid.grabExpr(draw(ht1, ht_gap = unit(c(1), "cm"), annotation_legend
 
 #***************#
 #sup 1d PCC between fit of input 1 and 2
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 #synthetic profiles, input1
 load("profile_mat.Rdata")
@@ -157,7 +157,7 @@ for (i in 1:length(select.genes)){
 }
 names(cor_list) = select.genes 
 select.highquality.genes = names(which(cor_list > 0.9))
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/sup.fig1.d.jpeg",
+jpeg("~/Documents/MCM_paper/manuscript_figure/sup.fig1.d.jpeg",
      width = 220, height = 150, unit = "mm",res = 400)
 par(mar = c(5,5,2,4))
 hist(cor_list,xlab = "PCC between synthetic profiles fit with input set1 and set2",

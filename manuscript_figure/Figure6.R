@@ -2,7 +2,7 @@
 # This script is to generate figure 6 as well as two supplemetal figure panels (Supplental figure 9A and B) for the manuscript
 
 # set up the directory where I can get the data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 #load packages
 library(readxl)
@@ -239,7 +239,7 @@ lgd_BS = Legend( col_fun = col_wrky_bf, title = "BS number",legend_height = unit
                  title_gp = gpar(fontsize = 14), labels_gp = gpar(fontsize = 11),title_gap = unit(2,"mm"))
 pd = packLegend(lgd_flg22,lgd_BS, gap = unit(5, "mm"), direction = "vertical")
 #Figure 6 combined
-jpeg('/Users/liux/Documents/MCM_paper/manuscript_figure/Figure6.jpeg',width = 360, height = 180, unit = 'mm', res = 400)
+jpeg('~/Documents/MCM_paper/manuscript_figure/Figure6.jpeg',width = 360, height = 180, unit = 'mm', res = 400)
 draw(ht_cosine + ht_flg22 + ht_WRKY_WRKY_bf_cosine,ht_gap = unit(0.8, "cm"), 
      heatmap_legend_list =pd)
 grid.text('A', x = unit(7,'mm'),y = unit(175,'mm'),gp = gpar(fontface = 'bold', fontsize = 12))
@@ -251,19 +251,19 @@ dev.off()
 #Figure B.6 for thesis, also can be used for supplemental figure of the manuscript
 # Please change the output name and directory as needed
 # for thesis
-jpeg('/Users/liux/Desktop/paper_figures/thesis/FigureB.6.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
+jpeg('~/Desktop/paper_figures/thesis/FigureB.6.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
 draw(ht_WRKY_bf_cosine)
 dev.off()
 #Figure B.7 for thesis, also can be used for supplemental figure of the manuscript
-jpeg('/Users/liux/Desktop/paper_figures/thesis/FigureB.7.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
+jpeg('~/Desktop/paper_figures/thesis/FigureB.7.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
 draw(ht_wrky_anac_bf)
 dev.off()
 
 # for manuscript
-jpeg('/Users/liux/Documents/MCM_paper/manuscript_figure/Figure9A.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
+jpeg('~/Documents/MCM_paper/manuscript_figure/Figure9A.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
 draw(ht_WRKY_bf_cosine)
 dev.off()
 
-jpeg('/Users/liux/Documents/MCM_paper/manuscript_figure/Figure9B.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
+jpeg('~/Documents/MCM_paper/manuscript_figure/Figure9B.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
 draw(ht_wrky_anac_bf)
 dev.off()

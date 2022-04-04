@@ -4,7 +4,7 @@ library(circlize)
 library(RColorBrewer)
 library(grid)
 library(gridExtra)
-setwd("/Users/liux/Documents/MCM_paper/data/Figure3_data/")
+setwd("~/Documents/MCM_paper/data/Figure3_data/")
 load("profile_mat.Rdata")
 load("AvrRpt2_genes.Rdata")
 rownames(profiles_mat) = AvrRpt2_mock_positive_genes
@@ -191,7 +191,7 @@ lgd_flg22 = Legend( col_fun = col_flg22, title = "log(FC)_flg22",legend_height =
 hm_flg22 = grid.grabExpr(draw(flg22_ht1 %v% flg22_ht2 %v% flg22_ht3 %v% flg22_ht4, 
                                 annotation_legend_list = lgd_flg22))
 
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/Figure3_FK.jpeg",height = 150, width = 250, units = "mm",res = 300)
+jpeg("~/Documents/MCM_paper/manuscript_figure/Figure3_FK.jpeg",height = 150, width = 250, units = "mm",res = 300)
 grid.arrange(hm_AvrRpt2,hm_flg22, layout_matrix = rbind(c(1,1,1,2,2),c(1,1,1,2,2)))
 grid.text('time (hour)', x = unit(140,'mm'),y = unit(6,'mm'))
 grid.text('A', x = unit(5,'mm'),y = unit(145,'mm'), gp= gpar(fontsize = 9,fontface = 'bold'))

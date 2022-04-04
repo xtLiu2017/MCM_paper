@@ -7,7 +7,7 @@
 #The codes below generate all residual distributions
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 #libraries
 library("dplyr")
@@ -35,7 +35,7 @@ normality_20h = shapiro.test(profiles_mat[select.highquality.genes,20])
 normality_24h = shapiro.test(profiles_mat[select.highquality.genes,21])
 
 #starting the plots here
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/sup.5.jpeg", width = 350, height = 350, units = "mm",res = 400)
+jpeg("~/Documents/MCM_paper/manuscript_figure/sup.5.jpeg", width = 350, height = 350, units = "mm",res = 400)
 par(mfrow = c(5,4), mar = c(3,5,3,1), oma = c(3,8,3,3))
 hist(profiles_mat[select.highquality.genes,15],breaks = seq(-2.2,2.2,0.02), main = "4h",ylab = "Number of genes",
      xlab = "",xlim = c(-2.2,2.2),ylim  = c(0,200),cex.lab = 2,cex.axis = 2, cex.main = 3)
@@ -122,14 +122,14 @@ dev.off()
 #make plots to see the original fitting and altered fitting 
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 # 3039 genes
 load("AvrRpt2_genes.Rdata")
 # genes with altered fitting (optimal threshold obtained above)
 load("genes_to_fix.Rdata")
 # a function script 
-source("/Users/liux/Documents/MCM_paper/MCM_function.R")
+source("~/Documents/MCM_paper/MCM_function.R")
 # read conut data
 load("/Users/liux/Documents/Ken_analysis/data/col_count_data.Rdata")
 all.genes <- rownames(col_count_data)
@@ -162,7 +162,7 @@ rownames(parameter_best_before) = AvrRpt2_mock_positive_genes
 load("merged_result_16h_part.Rdata")
 rm(parameter_best)
 
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/sup.6.jpeg",width = 5.8, height = 4.8, units = "cm", res = 700)
+jpeg("~/Documents/MCM_paper/manuscript_figure/sup.6.jpeg",width = 5.8, height = 4.8, units = "cm", res = 700)
 i = 1; j = 1
 par(mfrow = c(3,2),mar = c(1.8,2.2,0.4,0.8))
 for (mygene in genes_to_be_fixed[c(1,2,4)]){

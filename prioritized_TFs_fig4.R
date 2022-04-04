@@ -1,4 +1,4 @@
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 load("pvalues_sliding_windows.Rdata")
 library(ggplot2)
 library(gridExtra)

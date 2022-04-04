@@ -3,7 +3,7 @@
 # It is the temporal enrichment of the 33 prioritized TFs
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 # load the packages
 library(ggplot2)    # plotting
@@ -224,7 +224,7 @@ ht1 = Heatmap(-log10(p_mat), col = col,cluster_columns = FALSE,
 # grab the heatmap
 grob.fig5c = grid.grabExpr(draw(ht1,heatmap_legend_list = lgd)) 
 # change the output directory as needed
-jpeg('/Users/liux/Desktop/paper_figures/thesis/figure3.7.jpeg', width = 230, height = 175, unit = 'mm', res = 400)
+jpeg('~/Desktop/paper_figures/thesis/figure3.7.jpeg', width = 230, height = 175, unit = 'mm', res = 400)
 draw(ht1,heatmap_legend_list = lgd)
 grid.text('time (hour)', x = unit(172,'mm'),y = unit(16,'mm'), gp = gpar(fontsize = 14))
 dev.off()
@@ -372,7 +372,7 @@ fig5B = ggplot(family_df, aes(x = index, y = no, color = gene)) + geom_line() + 
 lay <- rbind(c(1,2),c(1,2))
 
 #change output directory as needed
-jpeg('/Users/liux/Desktop/paper_figures/thesis/figure3.6A-B.jpeg', width = 450, height = 275, unit = 'mm', res = 400)
+jpeg('~/Desktop/paper_figures/thesis/figure3.6A-B.jpeg', width = 450, height = 275, unit = 'mm', res = 400)
 grid.arrange(fig5a_plot,fig5B,layout_matrix = lay)
 grid.text('A', x = unit(7,'mm'),y = unit(270,'mm'),gp = gpar(fontface = 'bold', fontsize = 18))
 grid.text('B', x = unit(225,'mm'),y = unit(270,'mm'),gp = gpar(fontface = 'bold',fontsize = 18))

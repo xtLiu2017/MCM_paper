@@ -3,7 +3,7 @@
 # It is the transcript responses of the HSF genes
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 #load the glm data
 load("glm_fixef_Ken_WT_with_pseudocounts.Rdata")
@@ -68,7 +68,7 @@ plot_B5 = ggplot(df_TFs, aes(x = time, y = mean_diff, color = TF_label)) + geom_
         strip.background = element_blank(),strip.text.x = element_text(size = 14),
         axis.title = element_text(size = 12), axis.text = element_text(size = 10))
 # change the output directory as needed
-jpeg('/Users/liux/Desktop/paper_figures/thesis/figureB.5.jpeg', width = 120, height = 100, unit = 'mm', res = 500)
+jpeg('~/Desktop/paper_figures/thesis/figureB.5.jpeg', width = 120, height = 100, unit = 'mm', res = 500)
 grid.arrange(plot_B5)
 dev.off()
   

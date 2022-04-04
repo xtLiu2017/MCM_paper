@@ -3,7 +3,7 @@
 # It shows a single scaling factor can account for the global peak delay
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 # packages
 library(ComplexHeatmap)    # heatmap library
@@ -222,7 +222,7 @@ ht_best = Heatmap(mymat_best, col = col, cluster_rows = mhclust, name = "log(FC)
                  border = "gray20",column_split = rep(c("first peaks","second peaks"),each=dim(mymat_best)[2]/2),
                  show_heatmap_legend = F)
 
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/sup.fig7.jpeg",height = 280, width = 400, units = "mm",res = 500)
+jpeg("~/Documents/MCM_paper/manuscript_figure/sup.fig7.jpeg",height = 280, width = 400, units = "mm",res = 500)
 grid.newpage()
 pushViewport(viewport(layout = grid.layout(nr = 2, nc = 2)))
 pushViewport(viewport(layout.pos.row = 1, layout.pos.col = 1))
@@ -244,7 +244,7 @@ upViewport()
 
 dev.off()
 # plot histogram showing all PCCs with different scaling factors
-jpeg("/Users/liux/Documents/MCM_paper/manuscript_figure/sup.7e.jpeg",width = 130, height = 85, unit = "mm",res = 400)
+jpeg("~/Documents/MCM_paper/manuscript_figure/sup.7e.jpeg",width = 130, height = 85, unit = "mm",res = 400)
 par(mar = c(4.8,4.2,2,2))
 plot(seq(-2,0.3,0.02), all.true_pccs_time_lag,type = "l", xlab = 'time lag (log)', 
      ylab = "mean PCC", cex.lab = 1, frame.plot = F,lwd = 1.4)

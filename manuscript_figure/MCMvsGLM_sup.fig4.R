@@ -3,7 +3,7 @@
 # Previously, we put it in the main figures but now we make it in supplemental figure 4
 
 # directory of MCM project, /MCM_paper/data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 # glm fitting of AvrRpt2 ETI data
 load("glm_fixef_Ken_WT_with_pseudocounts.Rdata")
@@ -33,7 +33,7 @@ for (mygene in select.genes){
 names(PCC_vec) = select.genes
 #1939 genes
 load("select.highquality.genes.Rdata")
-jpeg('/Users/liux/Documents/MCM_paper/manuscript_figure/sup.fig4.jpeg',width = 126, height = 100, unit = 'mm', res = 700)
+jpeg('~/Documents/MCM_paper/manuscript_figure/sup.fig4.jpeg',width = 126, height = 100, unit = 'mm', res = 700)
 par(mar = c(5,5,3.6,2))
 hist(PCC_vec, breaks = 60, xlab = "PCC", ylab = "Number of genes", 
      main = "Pearson correlation coefficients (PCCs) \n between fit of GLMs and MCMs",

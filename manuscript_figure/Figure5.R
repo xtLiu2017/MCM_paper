@@ -2,7 +2,7 @@
 # This script is to generate figure 5 for the manuscript
 
 #set up the environment where I can best reach the data
-setwd("/Users/liux/Documents/MCM_paper/data")
+setwd("~/Documents/MCM_paper/data")
 
 #load the packages
 library(ggplot2)    # plotting
@@ -367,7 +367,7 @@ lay <- rbind(c(1,1,1),
              c(3,3,3),
              c(3,3,3))
 #change output directory as needed
-jpeg('/Users/liux/Documents/MCM_paper/manuscript_figure/Figure5.jpeg', width = 210, height = 450, unit = 'mm', res = 500)
+jpeg('~/Documents/MCM_paper/manuscript_figure/Figure5.jpeg', width = 210, height = 450, unit = 'mm', res = 500)
 grid.arrange(fig5a_plot,fig5B,grob.fig5c,layout_matrix = lay)
 grid.text('time (hour)', x = unit(180,'mm'),y = unit(13.1,'mm'))
 grid.text('A', x = unit(3,'mm'),y = unit(440,'mm'),gp = gpar(fontface = 'bold'))
