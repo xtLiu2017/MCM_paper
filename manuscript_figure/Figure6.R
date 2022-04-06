@@ -260,10 +260,10 @@ draw(ht_wrky_anac_bf)
 dev.off()
 
 # for manuscript
-jpeg('~/Documents/MCM_paper/manuscript_figure/Figure9A.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
+jpeg('~/Documents/MCM_paper/manuscript_figure/sup.fig9A.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
 draw(ht_WRKY_bf_cosine)
 dev.off()
 
-jpeg('~/Documents/MCM_paper/manuscript_figure/Figure9B.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
+jpeg('~/Documents/MCM_paper/manuscript_figure/sup.fig9B.jpeg',width = 150, height = 120, unit = 'mm', res = 400)
 draw(ht_wrky_anac_bf)
 dev.off()

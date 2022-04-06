@@ -1,3 +1,5 @@
+# We have a better script than this one, so it is no longer used
+
 setwd("~/Documents/MCM_paper/data")
 #data preprocessing
 Daisuke_info = read.csv(file = "preliminary.gamma.distr.fit.a.pt.csv",header = T)
