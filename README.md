@@ -1,10 +1,10 @@
-# MCM_paper
+# Multi-compartment Model manuscript
 
 Author: Xiaotong Liu (liux4215@umn.edu)
 
 This folder ('/MCM_paper') contains my work on the project of MCM manuscript. It also contains the code and data for my PhD thesis and defense presentation.
 
-The data files (* .Rdata * , .txt, etc) are all saved in the sub-folder '/MCM_paper/data'. The scripts obtain data from that directory.
+The data files (*.Rdata* , .txt, etc) are all saved in the sub-folder '/MCM_paper/data'. The scripts obtain data from that directory.
 
 I specifically focus on organizing the scripts for figures in this folder: 
 
